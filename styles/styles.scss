@@ -60,31 +60,26 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(10, 0, 73);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(163, 14, 143);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(18, 180, 45);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(207, 99, 10);
 }
 
 .active {
@@ -139,3 +134,27 @@ section {
     }
   }
 }
+
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  .left-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .h-shape {
+      transition: all 0.4s ease-in-out;
+      width: 65%;
+      height: 100%;
+      background-color: var(--color-secondary);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    }
+  }
+}
+
